@@ -1,23 +1,23 @@
 export function createStore(reducer, initialState) {
-  let state = initialState;
-  let updater;
+  let state = initialState
+  let updater
 
   function getState() {
-    return state;
+    return state
   }
 
   function dispatch(action) {
-    state = reducer(state, action);
-    updater && updater();
+    state = reducer(state, action)
+    updater && updater()
   }
 
   function subscribe(listener) {
-    updater = listener;
+    updater = listener
   }
 
   return {
     getState,
     dispatch,
-    subscribe,
-  };
+    subscribe
+  }
 }

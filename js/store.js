@@ -1,6 +1,6 @@
 const inititalState = {
   name: "akashi",
-  surname: "seijuro",
+  surname: "seijuro"
 };
 
-export default inititalState;
+export default inititalState
